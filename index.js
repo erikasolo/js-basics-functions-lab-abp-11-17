@@ -5,3 +5,10 @@ function distanceFromHqInBlocks (destination){
 function distanceFromHqInFeet (destination) {
   distanceFromHqInBlocks(destination * 264);
 }
++function distanceTravelledInFeet(start, destination) {
+ +  if (destination > start) {
+ +    return (destination - start) * 264;
+ +  }else {
+ +      return (start - destination) * 264;
+ +  }
+ +}
